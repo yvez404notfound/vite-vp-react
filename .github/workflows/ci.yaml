@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  CI:
+    name: Audit, Lint, Test, & Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v7
+
+      - name: Setup VP
+        uses: voidzero-dev/setup-vp@v1.4.0
+        with:
+          node-version: 'lts'
+          cache: true
+
+      - name: Audit Dependency
+        run: vp pm audit
+
+      - name: Check (Lint & Format)
+        run: vp check
+
+      # Uncomment this step if your project has a test
+      # - name: Test
+      #   run: vp test
+
+      - name: Build
+        run: vp build
