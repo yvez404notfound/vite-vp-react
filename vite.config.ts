@@ -3,8 +3,8 @@ import {defineConfig, lazyPlugins} from 'vite-plus';
 
 // https://vite.dev/config/
 export default defineConfig({
-  stages: {
-    '*': 'vp check',
+  staged: {
+    '*': 'vp check --fix',
   },
   fmt: {
     arrowParens: 'always',

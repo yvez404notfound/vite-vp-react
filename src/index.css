@@ -1,14 +1,14 @@
 /* THIS WHERE YOU WILL PUT YOUR GLOBAL STYLES */
-@import url("./assets/stylesheets/modern-normalize.css");
+@import url('./assets/stylesheets/modern-normalize.css');
 
 :root {
-	--font-fallback:
-		system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-fallback:
+    system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
