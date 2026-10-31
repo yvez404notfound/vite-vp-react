@@ -58,7 +58,8 @@ curl -fsSL https://vite.plus | bash
 irm https://vite.plus/ps1 | iex
 ```
 
-**(2) Use the repo as a template**
+**(2) Use this repo as a template to create your repo**
+<br/>
 On the repository page click the _"Use this template"_ button (placed beside the star button). The button would redirect you to the create repo page, complete the necessary details.
 
 **(3) Clone your created repo on your machine**
